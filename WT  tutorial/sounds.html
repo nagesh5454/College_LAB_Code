@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>image</title>
+</head>
+<style>
+    img{
+       cursor:pointer;
+    }
+
+    body{
+      color:grey;
+    }
+</style>
+<body>
+  click on this image to play the videoz<br>
+  <img src="cats.jpeg" id="cats" alt="" height="150" width="150">
+  <audio id="cat">
+    <source src="domestic_cat.mp3" type="audio/mpeg">
+  </audio>
+  
+  <img src="bear.jpeg" id="bears" alt="" height="150" width="150">
+  <audio id="bear">
+    <source src="bear.mp3" type="audio/mpeg">
+  </audio>
+  
+  <img src="elephants.jpeg" id="elephants" alt="" height="150" width="150">
+  <audio id="elephant">
+    <source src="elephant.wav" type="audio/mpeg">
+  </audio>
+  
+  <img src="lion.jpeg" id="lions" alt="" height="150" width="150">
+  <audio id="lion">
+    <source src="lion_1.mp3" type="audio/mpeg">
+  </audio>
+  
+  <img src="tiger.jpeg" id="tigers" alt="" height="150" width="150">
+  <audio id="tiger">
+    <source src="bengal_tiger.wav" type="audio/mpeg">
+  </audio>
+  
+  <img src="chimp.jpeg" id="chimps" alt="" height="150" width="150">
+  <audio id="chimp">
+    <source src="chimp.wav" type="audio/mpeg">
+  </audio>
+  
+
+  <script>
+    var image = document.getElementById('cats');
+    var audio = document.getElementById('cat');
+  
+    image.addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+   <script>
+    var image = document.getElementById('bears');
+    var audio = document.getElementById('bear');
+  
+    image.addEventListener('click', function() {
+      audio.play()
+    });
+  </script> 
+  <script>
+    var image = document.getElementById('elephants');
+    var audio = document.getElementById('elephant');
+  
+    image.addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+  <script>
+    var image = document.getElementById('lions');
+    var audio = document.getElementById('lion');
+  
+    image.addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+  <script>
+    var image = document.getElementById('tigers');
+    var audio = document.getElementById('tiger');
+  
+    image.addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+  <script>
+    var image = document.getElementById('chimps');
+    var audio = document.getElementById('chimp');
+  
+    image.addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      body {
+        text-decoration: underline;
+        text-justify: auto;
+        background-image: linear-gradient(red, blue,green);
+        filter: invert();
+        
+      }
+      #college {
+        text-justify: auto;
+      }
+      #name{
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee direction="right">personal imformation</marquee>
+    <form action="">
+      <fieldset>
+        <legend>---------------google form---------------</legend>
+        <label for="">
+          1.Name:
+          <input  id="name" type="text" required /><br />
+        </label>
+        <label for="">
+          2.surname:
+          <input type="text" /><br />
+        </label>
+        <label for="">
+          3.email:
+          <input type="email" required /><br />
+        </label>
+        <label for="">
+           4.Mo number:
+            <input type="tel" /><br />
+          </label>
+  
+        <label for="">
+         5. gender:
+          <input type="radio" name="gender" />male 
+          <input type="radio" name="gender" />female<br />
+        </label>
+        <label for="">
+         6. passward:
+          <input type="password" /><br />
+        </label>
+         7.college
+        <label for="7.collge">
+         
+          <input type="text" id="college" /><br />
+        </label>
+        <label for="">
+          8.branch:<br />
+          <input type="radio" name="branch" />Information Technology<br />
+          <input type="radio" name="branch" />Computer Engineering<br />
+          <input type="radio" name="branch" />Electronic and  Telecommunication<br />
+          <input type="radio" name="branck" />petrochemical <br>
+          <input type="radio" name="branch" />Civil<br />
+          <input type="radio" name="branch" />mechanical<br />
+        </label>
+        <label for="">
+          9.year:<br />
+          <input type="radio" name="year" />1st year<br />
+          <input type="radio" name="year" />2nd year<br />
+          <input type="radio" name="year" />3rd year<br />
+          <input type="radio" name="year" />4th year<br />
+        </label>
+        <label for="">
+         10. PRN:
+          <input type="number" /><br />
+        </label>
+        <label for="">
+         11. your project url:
+          <input type="url" /><br />
+        </label>
+        <label for="">
+         12. internship offer letter:
+          <input type="file" multiple /><br />
+        </label>
+        <label for="">
+         13 reset:
+          <input type="reset" title="reset form" /><br />
+        </label>
+        <label for="">
+        submit:
+        <input type="submit"   />
+      </label>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  <title>Nagesh Mane</title> 
+</head>
+<style>
+    body{
+        background-image: linear-gradient(red,yellow);
+    }
+    ul{
+        background-image:linear-gradient(rgb(77, 183, 225),rgb(241, 38, 38));
+        list-style-type: none;
+        border: 1px solid red;
+        overflow: auto; 
+        text-align: center;
+       
+    }
+    a{
+        color:white;
+        padding: 10px 75px;
+        float :left;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer; 
+    }
+    marquee{
+        color:white;
+       
+    }
+   h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
+   h4{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+</style>
+<body>
+   <marquee direction="right" scrollamount="10"  behavior="alternate">  DBATU LONERE </marquee>
+  <hr>
+  <marquee direction="left" scrollamount="10"  behavior="alternate"> ANIMALS SOUND </marquee>
+  <h1  >*Animals*</h1>
+  <u>search animals:</u>
+  <input type="search"  placeholder="animal name">
+  <h4 >click on the images  to listen the sound of that animal </h4>
+  <ul>
+    <a href="">cat</a>
+    <a href="">dog</a>
+    <a href="">elephant</a>
+    <a href="">tiger</a>
+    <a href="">bear</a>
+    <a href="">lion</a>
+  </ul>
+  
+
+   
+  <div class="animal-container">
+   
+    <img src="cat.jpeg" alt="Cat" title="cat" class="animal-img" onclick="playSound('cat')">
+    
+    <img src="dog.jpeg" alt="Dog" title="dog" class="animal-img" onclick="playSound('dog')">
+   
+    <img src="elephants.jpeg" alt="elephants" title="elephant" class="animal-img" onclick="playSound('elephants')">
+
+    <img src="tiger.jpeg" alt="tiger" title="tiger" class="animal-img" onclick="playSound('tiger')">
+
+    <img src="bear.jpeg" alt="bear" title="bear" class="animal-img" onclick="playSound('bear')">
+    <img src="lion.jpeg" alt="lion"  title="lion" class="animal-img" onclick="playSound('lion')">
+
+   
+  </div>
+
+  <audio id="animal-sound"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+.animal-container {
+   
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .animal-img {
+    border:1px solid black;
+    width: 165px;
+    height: 165px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  

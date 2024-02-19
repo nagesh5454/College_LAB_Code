@@ -1,0 +1,54 @@
+Yes, merging rows and columns can be used together in HTML tables to create more complex layouts. This is achieved using the rowspan and colspan attributes.
+
+The rowspan attribute specifies the number of rows a cell should span, while the colspan attribute specifies the number of columns a cell should span.
+
+Here's an example to illustrate the usage of merging rows and columns:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merging Rows and Columns</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Header 1</th>
+            <th colspan="2">Header 2</th>
+        </tr>
+        <tr>
+            <th>Subheader 1</th>
+            <th>Subheader 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td colspan="2">Row 2, Cell 2 and 3 (merged)</td>
+        </tr>
+    </table>
+</body>
+</html>
+In this example, we have a table with four rows and three columns. Here's what each part of the table does:
+
+The first row has a header cell (Header 1) that spans two rows (rowspan="2"), and two header cells (Header 2 and Subheader 2) that span two columns (colspan="2").
+
+The second row has two cells (Subheader 1 and Subheader 2) that occupy one column each.
+
+The third row has three cells (Row 1, Cell 1, Row 1, Cell 2, and Row 1, Cell 3) with regular spanning.
+
+The fourth row has a cell (Row 2, Cell 1) with regular spanning and a cell (Row 2, Cell 2 and 3) that spans two columns (colspan="2"), effectively merging the cells.
+
+When you view the HTML code in a web browser, you will see a table with merged rows and columns, creating a more complex layout with merged cells. Feel free to experiment with the code and adjust the rowspan and colspan attributes to achieve different merging effects in your tables.

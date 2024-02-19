@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Form</title>
+</head>
+<body>
+    <h1>Simple HTML Form</h1>
+
+    <form action="display_name.php" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+<!-- In this example:
+
+The HTML form contains an input field for the user to enter their name and a submit button.
+The form's action attribute is set to "display_name.php", which means the form data will be sent to the PHP file for processing.
+The PHP file checks if the request method is POST (to handle the form submission) and retrieves the user name from the $_POST superglobal array.
+The PHP file uses the echo statement to display a greeting message with the user's name.
+When you open the HTML file in a web browser, you'll see the form. After entering a name and submitting the form, the PHP file will process the form data and display a greeting message with the entered name.
+
+Please make sure that the PHP file has a .php extension and is correctly configured on a server that supports PHP processing.
+
+ -->
+
+
