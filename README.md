@@ -1,5 +1,5 @@
 <h1>Dr. Babasaheb Ambedkar Technological Univarsity Lonere , Raigad  Mahrarashtra</h1> <br>
-<h3>Brach - Information Technology </h3><br>
+<h3>Branch - Information Technology </h3><br>
 <hr>
 # COllege_LAB_Code<br>
 1)DAA <br>
